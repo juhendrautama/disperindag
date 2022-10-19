@@ -37,6 +37,9 @@
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="adminpanel/"><i class="fa fa-table fa-fw"></i> Kategori Data Udahan</a>
+                        </li>
                          <li>
                             <a href="adminpanel/Admin_data_putusan"><i class="fa fa-table fa-fw"></i> Data Udahan</a>
                         </li>

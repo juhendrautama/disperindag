@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php"><img src="images/logo-mobile.png"  alt="holiday crown" style="width:250px;height:55px;">
+      <a class="navbar-brand" href=""><img src="images/logo-mobile.png"  alt="holiday crown" style="width:250px;height:55px;">
 </a>
     </div>
 
@@ -69,6 +69,7 @@
              <a href="" class="dropdown-toggle dropdown" type="button" data-toggle="dropdown">Layanan Informasi
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
+            <li><a href="Berita/Pengaduan">Pengaduan</a></li>
               <li><a href="Berita/layanan">Izin Usaha Industri</a></li>
               <li><a href="Berita/Bapok">Harga Bahan Pokok</a></li>
               <li><a href="Galleri/Vidio">Harga Bahan Bangunan</a></li>            

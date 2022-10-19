@@ -60,7 +60,7 @@
     <form role="form" class="wowload fadeInRight">
         <div class="form-group">
            <center>
-            <img src="images/penghubung1.jpg" width="55%" height="250">
+            <img src="images/" width="55%" height="250">
             <div class="featured-author-footer"><br>
 
   Ir. xxxxxxxx, MMA 

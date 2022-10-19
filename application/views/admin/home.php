@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <a class="navbar-brand" href="adminpanel/Home">WEBSITE RESMI disperindag</a>
+               <a class="navbar-brand" href="adminpanel/Home">ADMINPANEL</a>
             </div>
             <!-- /.navbar-header -->
             <?php $this->load->view('admin/tools/menu_atas'); ?>
