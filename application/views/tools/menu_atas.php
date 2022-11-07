@@ -69,10 +69,10 @@
              <a href="" class="dropdown-toggle dropdown" type="button" data-toggle="dropdown">Layanan Informasi
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
-            <li><a href="Berita/Pengaduan">Pengaduan</a></li>
-              <li><a href="Berita/layanan">Izin Usaha Industri</a></li>
-              <li><a href="Berita/Bapok">Harga Bahan Pokok</a></li>
-              <li><a href="Galleri/Vidio">Harga Bahan Bangunan</a></li>            
+            <li><a href="Pengaduan">Pengaduan</a></li>
+            <?php foreach($tampil_data_kat_putusan->result()as $rs) {?> 
+              <li><a href="Undahan/Data/<?php echo $rs->id_kategori_dok; ?>"><?php echo $rs->nama_kategori_dok; ?></a></li>      
+            <?php } ?>       
             </ul>
 
         <li>

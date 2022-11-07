@@ -21,12 +21,14 @@ class Berita extends CI_Controller {
 			$this->load->model('M_crud_web_terkait');
 			$this->load->model('M_crud_galleri');
 			$this->load->model('M_crud_kontak');
+			$this->load->model('M_crud_putusan');
 		}
 
 	
 	public function index()
 
 	{
+		$data['tampil_data_kat_putusan']=$this->M_crud_putusan->tampil_data_kat_putusan();
 		$data['tampil_data_baner']=$this->M_crud_baner->tampil_data_baner();
 		$data['tampil_data_profil']=$this->M_crud_profil->tampil_data_profil();
 		$data['tampil_informasi']=$this->M_crud_kegiatan_program->tampil_data_kegiatan_program();

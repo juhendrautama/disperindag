@@ -41,36 +41,31 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            DATA UNDAHAN
+                            DATA KATEGORI UNDAHAN
                         </div>
 
 
 
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                              <form method="post" action="adminpanel/Admin_data_putusan/Simpan_data" enctype="multipart/form-data">
+                              <form method="post" action="adminpanel/Admin_data_kategori_putusan/Simpan_data" enctype="multipart/form-data">
 
                              <div class="row">
                                 <div class="col-md-4">
-                                    <input type="taxt" name="judul" value="" class="form-control" placeholder="Judul"/>
+                                    <input type="taxt" name="nama_kategori_dok" value="" class="form-control" placeholder="nama kategori"/>
                                 </div>
-                               
-                                 <div class="col-md-4">
-                                   <input type="file" required name="userfile"  class="form-control"/>
-                                </div>
-                                <div class="col-md-4">
-                                   <select name="id_kategori_dok" class="form-control">
-                                        <option value="">Pillih Kategori</option>
-                                <?php foreach($tampil_data_kat_putusan->result()as $rs){?> 
-                <option value="<?php echo $rs->id_kategori_dok; ?>"><?php echo $rs->nama_kategori_dok; ?></option>
-                                 <?php } ?>    
-                                   </select>
+                            </div>
+                            <hr>
+
+                            <div class="row">
+                            <div class="col-md-12">
+                                  <textarea name="ket" id=""  rows="8"></textarea>
                                 </div>
                             </div>
                             <br>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <input type="submit" name="proses"  value="Submit" class="btn btn-info"/>
+                                    <input type="submit" name="proses"  value="Simpan" class="btn btn-info"/>
                                 </div>
                                 
                             </div> 
@@ -82,32 +77,20 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Judul</th>
-                                        <th>File</th>
-                                        <th>Kategori</th>
+                                        <th>Nama</th>
                                         <th>Tanggal</th>
                                         <th><center>Aksi</center></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                 <?php $no=1; foreach($tampil_data_putusan->result()as $rs){?> 
+                                 <?php $no=1; foreach($tampil_data_kat_putusan->result()as $rs){?> 
                                     <tr class="odd gradeX">
                                         <td><?php echo $no ?></td>
-                                        <td><?php echo $rs->judul; ?></td>
-                                        <td>
-                                        <a href="data/putusan/<?php echo $rs->file; ?>"><?php echo $rs->file; ?></a>
-                                        </td>
-                                        <td>
-                                            <?php 
-                                            $idkategori=$rs->id_kategori_dok;
-                                            $datakategori=$this->M_crud_putusan->tampil_data_kat_putusan_id($idkategori)->row(); 
-                                            echo  $datakategori->nama_kategori_dok;
-                                            ?>
-                                        </td>
+                                        <td><?php echo $rs->nama_kategori_dok; ?></td>
                                         <td><?php echo $rs->tgl; ?></td>
                                         <td >
                                             <center>
-                                            <a Onclick="return confirm('apakah yakin ingin di Hapus ?');" href="adminpanel/Admin_data_putusan/Hapus/<?php echo $rs->id_putusan; ?>" class="btn-sm btn-danger">Hapus</a>
+                                            <a Onclick="return confirm('apakah yakin ingin di Hapus ?');" href="adminpanel/Admin_data_kategori_putusan/Hapus/<?php echo $rs->id_kategori_dok; ?>" class="btn-sm btn-danger">Hapus</a>
                                            </center>     
                                         </td>
                                     </tr>

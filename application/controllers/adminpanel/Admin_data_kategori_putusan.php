@@ -2,7 +2,7 @@
 
 
 
-class Admin_data_putusan extends CI_Controller {
+class Admin_data_kategori_putusan extends CI_Controller {
 
 	function __construct()
 
@@ -19,8 +19,7 @@ class Admin_data_putusan extends CI_Controller {
 public function index()
 	{	
 		$data['tampil_data_kat_putusan']=$this->M_crud_putusan->tampil_data_kat_putusan();
-		$data['tampil_data_putusan']=$this->M_crud_putusan->tampil_data_putusan();
-		$this->load->view('admin/admin_putusan',$data);
+		$this->load->view('admin/admin_putusan_ketegori',$data);
 	}
 
 function sessionku ()
@@ -34,23 +33,22 @@ function sessionku ()
 
 public function Simpan_data(){
 		if(isset($_POST['proses'])){
-		$nama_file=$this->M_crud_putusan->Upload_file();	
-		$hasil=$this->M_crud_putusan->Simpan_data($nama_file);
+		$hasil=$this->M_crud_putusan->Simpan_data_kategori();
 		if ($hasil){ ?>
 				<script type="text/javascript">
-						alert('Data Tersimpan');window.location="<?php echo base_url() ?>adminpanel/Admin_data_putusan";
+						alert('Data Tersimpan');window.location="<?php echo base_url() ?>adminpanel/Admin_data_kategori_putusan";
 					</script>
 				<?php }
 			}else{
-				redirect('/Admin_data_putusan');
+				redirect('/Admin_data_kategori_putusan');
 			}
 	}
 
 function Hapus($id='0'){
-		$hasil=$this->M_crud_putusan->Hapus($id);
+		$hasil=$this->M_crud_putusan->Hapus_kategori($id);
 		if ($hasil){ ?>
 				<script type="text/javascript">
-						window.location="<?php echo base_url() ?>adminpanel/Admin_data_putusan";
+						window.location="<?php echo base_url() ?>adminpanel/Admin_data_kategori_putusan";
 					</script>
 				<?php }
 		}

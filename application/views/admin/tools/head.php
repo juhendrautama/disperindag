@@ -6,6 +6,8 @@
     <meta name="author" content="">
 
     <title>ADMINPANEL</title>
+    <link rel="shortcut icon" href="images/jambi.png" type="image/x-icon">
+    <link rel="icon" href="images/jambi.png" type="image/x-icon">
     <link rel="shortcut icon" href="../img/logo/logo_atas.png">
     <!-- Bootstrap Core CSS -->
     <link href="tmp_admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

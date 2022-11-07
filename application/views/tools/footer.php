@@ -1,57 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<?php $this->load->view('tools/head'); ?>
-</head>
-
-<body id="home">
-
-
-<!--MENU ATAS -->
-    <?php $this->load->view('tools/menu_atas'); ?>
-<!--MENU ATAS-->
-
-
-<div class="container">
-
-
-<!-- form -->
-
-<div class="row">
-  <div class="col-sm-6 wowload fadeInUp"><div class="rooms"><img src="images/photos/gal/IUI.jpg" class="img-responsive"><div class="info">
- </div></div></div>
-
-  <div class="col-sm-6 wowload fadeInUp"><div class="rooms"><img src="images/photos/gal/IUI1.jpg" class="img-responsive"><div class="info">
-  </div></div></div>
-
-  
-                     <div class="text-center">
-                    <!--  <ul class="pagination">
-                     <li class="disabled"><a href="#">«</a></li>
-                     <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                     <li><a href="#">2</a></li>
-                     <li><a href="#">3</a></li>
-                     <li><a href="#">4</a></li>
-                     <li><a href="#">5</a></li>
-                     <li><a href="#">»</a></li>
-                     </ul> -->
-                     </div>
-
-
-</div>
 <hr>
-
-
-<div class="container">
+  <!-- ======= Footer ======= -->
 
 <footer class="spacer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5">
-                    <h4>Badan Penghubung Provinsi Jambi</h4>
-                     <p>Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta  | 10330</p>
+                <h4>Dinas Disperindag Provinsi Jambi</h4>
+                     <p>Jl. Letjen Suprapto No.28, Telanaipura, Kec. Telanaipura, Kota Jambi, Jambi  | 36122</p>
                      <p>Telp : (021) 31935635  | Fax (021) 3922638</p>
-                     <p>Email : bapengdapprovjambi@jambiprov.go.id</p>
+                     <p>Email : Dinas@jambiprov.go.id</p>
                </div>              
                  
                  <div class="col-sm-3">
@@ -107,49 +64,3 @@
 
     </div>
 </div>
-</div>
-
-<br>
-
-
-<script src="assets/jquery.js"></script>
-
-<!-- wow script -->
-<script src="assets/wow/wow.min.js"></script>
-
-<!-- uniform -->
-<script src="assets/uniform/js/jquery.uniform.js"></script>
-
-
-<!-- boostrap -->
-<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
-
-<!-- jquery mobile -->
-<script src="assets/mobile/touchSwipe.min.js"></script>
-
-<!-- jquery mobile -->
-<script src="assets/respond/respond.js"></script>
-
-<!-- gallery -->
-<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
-
-
-<!-- custom script -->
-<script src="assets/script.js"></script>
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
-
-
-
-
-
